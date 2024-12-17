@@ -273,7 +273,7 @@ kubeadm init
 ```
 
 ```bash
-kubeadm init --apiserver-advertise-address=192.168.56.30 --control-plane-endpoint=k8s-master --pod-network-cidr=192.168.0.0/16 --cri-socket=unix:///var/run/containerd/containerd.sock --apiserver-cert-extra-sans=192.168.56.30 --service-cidr=192.168.56.30/24
+kubeadm init --apiserver-advertise-address=192.168.56.10 --control-plane-endpoint=k8s-master --pod-network-cidr=192.168.0.0/16 --cri-socket=unix:///var/run/containerd/containerd.sock --apiserver-cert-extra-sans=192.168.56.30 --service-cidr=192.168.56.30/24
 ```
 
 After the initialization process completes, you’ll see a message containing a ‘kubeadm join’ command. Save this command; we’ll use it later to add worker nodes to the cluster.

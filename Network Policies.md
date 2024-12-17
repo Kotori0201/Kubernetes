@@ -7,4 +7,7 @@
 
 - Để có thể sử dụng network policies thì cần phải có plugin mạng hỗ trợ network policies. Ví dụ calico, ... Flannel không hỗ trợ network policies
 
-- 
+- Mặc định: Nếu không có Network Policy nào trong một namespace, mọi Pod trong namespace đó có thể giao tiếp với các Pod khác trong cùng namespace hoặc các namespace khác mà không bị hạn chế.
+
+## The NetworkPolicy resource 
+![The NetworkPolicy resource](image-5.png)
